@@ -33,7 +33,7 @@ def post_new(request):
 def edit_post(request, pk):
     post = Post.objects.get(pk=pk)
     if request.method == 'POST':
-        form = PostForm(data=request.data, instance=post)
+        form = PostForm(data=request.POST, instance=post)
         if form.is_valid():
             post = form.save(commit=False)
             post.author = request.user

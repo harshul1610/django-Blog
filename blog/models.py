@@ -17,3 +17,8 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+    def getsummary(self):
+        len_string = len(self.text)
+        summary_string = self.text[:len_string/2]+'....'
+        return summary_string

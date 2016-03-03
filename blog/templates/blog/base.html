@@ -1,9 +1,8 @@
 {% load staticfiles %}
-{% load staticfiles %}
 
 <html>
 <head>
-    <title> Daily blog</title>
+    <title> Blog | Harshul Jain</title>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
@@ -14,12 +13,13 @@
     {% if user.is_authenticated %}
     <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
     {% endif %}
-    <h1><a href="/">Daily Blog</a></h1>
+    <center><h1><a href="http://www.harshuljain.in">Harshul Jain</a></h1></center>
+    <center><h3>Pythonist | Open source enthusiast</h3></center>
 </div>
 
 <div class="content container">
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-12">
             {% block content %}
             {% endblock %}
         </div>

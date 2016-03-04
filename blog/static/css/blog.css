@@ -54,3 +54,9 @@ font-size: 15pt;
 color: #4E4852;
 font-size: 14pt;
 }
+
+.post hr {
+    border-color: ##DFDFDF;
+    border-width: 2px;
+
+}

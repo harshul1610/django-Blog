@@ -6,9 +6,11 @@
         {% endif %}
         <h2>{{post.title}}</h2>
         <br>
-        <p>{{post.text}}</p>
+        <p align="justify">{{post.text}}</p>
+        <br>
         {% if post.image_url1 %}
         <img src="{{post.image_url1}}">
         {% endif %}
+        <hr>
     </div>
 {% endblock %}

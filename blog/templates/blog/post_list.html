@@ -4,7 +4,8 @@
             <div class="post">
                 <h2><a href="{% url 'post_detail' pk=post.pk %}">{{post.title}}</a></h2>
                 <br>
-                <p>{{post.getsummary}}</p>
+                <p align="justify">{{post.getsummary}}</p>
+                <hr>
             </div>
 {% endfor %}
 {% endblock %}
